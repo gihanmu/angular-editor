@@ -1,0 +1,16 @@
+<section>
+  <div>
+    <kendo-editor
+      (valueChange)="valueChange($event)"
+    ></kendo-editor>
+  </div>
+  <div>
+    <textarea
+      name="editorOutput"
+      id=""
+      cols="30"
+      rows="10"
+      [innerHTML]="value"
+    ></textarea>
+  </div>
+</section>
