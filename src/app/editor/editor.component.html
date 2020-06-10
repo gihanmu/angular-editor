@@ -2,7 +2,9 @@
   <div>
     <kendo-editor
       (valueChange)="valueChange($event)"
+      [value]="value"
     ></kendo-editor>
+    <button (click)="submit()">Submit</button>
   </div>
   <div>
     <textarea
@@ -13,4 +15,6 @@
       [innerHTML]="value"
     ></textarea>
   </div>
+
+  
 </section>
