@@ -6,6 +6,10 @@ import { EditorModule } from '@progress/kendo-angular-editor';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
 import { EditorComponent } from './editor/editor.component';
+import { ButtonsModule } from '@progress/kendo-angular-buttons';
+import { InputsModule } from '@progress/kendo-angular-inputs'
+import { DropDownsModule } from '@progress/kendo-angular-dropdowns';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -18,7 +22,11 @@ import { EditorComponent } from './editor/editor.component';
   imports: [
     BrowserModule,
     EditorModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ReactiveFormsModule,
+    InputsModule,
+    DropDownsModule,
+    ButtonsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
